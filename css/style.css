@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "American Typewriter", "Courier New", SansSerif;
+  font-weight: 600;
+}
+
+body {
+  background-image: url("img/gradient-header.png");
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-image: url("/img/gradient-header.png");
+  background-size: 100%;
+  background-position: center;
+  filter: grayscale(60%);
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+}
+
+.link-list {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.link-element {
+  position: relative;
+  margin-left: 50px;
+}
+
+.link-element:hover .list-icon{
+  filter: blur(10px);
+}
+
+.link-element:hover .link{
+  opacity: 1;
+}
+
+.link-element:active .link{
+  transform: scale(0.9) translate(-50%, -50%);
+}
+
+.list-icon {
+  width: 70px;
+  transition: all 0.3s ease;
+}
+
+.link {
+  opacity: 0;
+  white-space: nowrap;
+  position: absolute;
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.login-div {
+  margin-left: 50%;;
+}
+
+.login-icon {
+  width: 50px;
+}
+.header-name {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+.introduction {
+  padding: 300px 0 200px 0;
+  background-image: url("/img/telegraph.png");
+  background-size: 100%;
+}
+
+.introduction h1 {
+  font-size: 80px;
+  text-align: center;
+  text-shadow: white 0 0 10px;
+}
+
+.introduction p {
+  padding-right: 300px;
+  padding-left: 300px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: white 0 0 10px;
+}
+
+.get-started {
+  background-image: url("/img/gradient-header.png");
+  background-size: 100%;
+}
+
+.get-started h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.choice-element {
+  display: inline;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+  height: 320px;
+  width: 15vw;
+  margin: 0 auto;
+}
+
+.element-button {
+
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(147, 122, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: all 0.2s ease;
+}
+
+.element-button:hover {
+  transform: scale(0.9);
+  background-color: transparent;
+}
+
+.element-button:active {
+  transform: scale(0.8);
+}
+
+.button-icon {
+  width: 10vw;
+}
+
+.button-text {
+  font-size: 30px;
+}
+
+.description {
+  text-align: center;
+  font-size: 20px;
+}
+
+.register-button {
+  background: radial-gradient(circle, rgba(219,217,255,1) 0%, rgba(163,141,255,1) 100%);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.register-button:hover {
+  transform: scale(0.9);
+}
+
+.register-button:active {
+  transform: scale(0.8);
+}
+
+footer {
+  padding: 100px 0 30px 0;
+  text-align: center;
+
+}
