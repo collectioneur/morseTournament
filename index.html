@@ -21,32 +21,72 @@
     <div class = "link-list">
     <div class = "link-element">
       <div class = "link">
-        <a>Practice</a>
+        <button type = "button" class = "button-nav">Practice</button>
       </div>
       <img src = "img/practice-icon.png" class = "list-icon">
     </div>
     <div class= "link-element">
       <div class = "link">
-        <a>Test</a>
+        <button type = "button" class = "button-nav">Test</button>
       </div>
       <img src="img/test-icon-1.png" class="list-icon">
     </div>
     <div class= "link-element">
       <div class = "link">
-        <a>Multiplayer</a>
+        <button type = "button" class = "button-nav">Multiplayer</button>
       </div>
       <img src="img/multiplayer-icon.png" class="list-icon">
     </div>
-    <div class= "link-element login-div">
+    <div class= "link-element login-div" onclick='showLoginForm()'>
       <div class = "link">
-        <a>Login</a>
+        <button type = "button" class = "button-nav">Login</button>
       </div>
       <img src="img/login-icon-1.png" class="list-icon login-icon">
     </div>
     </div>
     </div>
   </header>
+  <div class = "wrapper expand-wrapper">
+        <button type = "button" class = "back-button" onclick="exitForm()"><img src = "img/cross.png" class = "back-image"></button>
+    <div class = "form-box login expand">
+      <h2>Login</h2>
+      <form action = "#">
+        <div class = "input-box">
+          <input type = "email" required>
+          <label>Email</label>
+        </div>
+        <div class = "input-box">
+          <input type = "password" required>
+          <label>Password</label>
+        </div>
+        <button type = "submit" class = "button button-login">Login</button>
+        <div class ="remember-forgot">
+          <a href="#">Forgot Password?</a>
+        </div>
+        <div class = "login-register">
+          <p>Don't have an account? <a href = "#" class = "register-link" onclick="showRegisterForm()">Register</a></p>
+        </div>
+      </form>
+    </div>
 
+    <div class = "form-box register expand">
+      <h2>Registration</h2>
+      <form action = "#">
+        <div class = "input-box">
+          <input type = "email" required>
+          <label>Email</label>
+        </div>
+        <div class = "input-box">
+          <input type = "password" required>
+          <label>Password</label>
+        </div>
+        <button type = "submit" class = "button button-login">Register</button>
+        <div class = "login-register">
+          <p>Already have an account? <a href = "#" class = "register-link" onclick="showLoginForm()">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
   <section class = "introduction">
     <h1>Morse Tournament</h1>
     <p> is your personal trainer for
@@ -58,11 +98,11 @@
     <h2>Lets get started!</h2>
     <div class = "choice">
       <div class = "choice-element">
-        <button type = "button" class = "element-button">
+        <button type = "button" class = "element-button" onclick='showLoginForm()'>
           <img src = "img/login-icon.png" class = "button-icon">
           <p class = "button-text">Login</p></button>
         <p class = "description">Log in to see your statistics. If you don't have an
-          account yet, click <button type = "button" class = "register-button">register</button></p>
+          account yet, click <button type = "button" class = "register-button" onclick="showRegisterForm()">register</button></p>
       </div>
       <div class = "choice-element">
         <button type = "button" class = "element-button">
@@ -87,10 +127,7 @@
     </div>
     <footer><p>Made by Yehor Kharchenko</p></footer>
   </section>
-  <div>
-
-  </div>
-  <script src="js/app.js"></script>
+  <script src="js/app.js/"></script>
 </body>
 
 </html>
