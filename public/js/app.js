@@ -3,6 +3,7 @@ const loginForm = document.querySelector('.login');
 const registerForm = document.querySelector('.register');
 
 function showLoginForm() {
+  console.log("aaa");
   wrapper.classList.remove('expand-wrapper');
   loginForm.classList.remove('expand');
   registerForm.classList.add('expand');

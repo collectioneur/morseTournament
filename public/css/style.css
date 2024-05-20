@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("img/gradient-header.png");
+  background-image: url("../img/gradient-header.png");
 }
 
 header {
@@ -21,7 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-image: url("/img/gradient-header.png");
+  background-image: url("../img/gradient-header.png");
   background-size: 100%;
   background-position: center;
   filter: grayscale(60%);
@@ -86,7 +86,7 @@ header {
 
 .introduction {
   padding: 300px 0 200px 0;
-  background-image: url("/img/telegraph.png");
+  background-image: url("../img/telegraph.png");
   background-size: 100%;
 }
 
@@ -106,7 +106,7 @@ header {
 }
 
 .get-started {
-  background-image: url("/img/gradient-header.png");
+  background-image: url("../img/gradient-header.png");
   background-size: 100%;
 }
 
