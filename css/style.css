@@ -207,7 +207,7 @@ footer {
 .wrapper {
   display: inline;
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -219,8 +219,9 @@ footer {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: 0 0 30px rgba(0,0,0, 0.5);
-  transition: opacity 0.5s ease;
+  transition: z-index 300ms ease, opacity 301ms ease;
   opacity: 1;
+  overflow: hidden;
 }
 
  .expand {
@@ -229,7 +230,9 @@ footer {
 
 .expand-wrapper {
   opacity: 0;
+  z-index: -1;
 }
+
 
 .wrapper .form-box {
   position: absolute;
@@ -257,12 +260,14 @@ footer {
   font-size: 1em;
   font-weight: 400;
   pointer-events: none;
-  transition: .5s;
+  transition: all .5s ease;
 }
 
 .input-box input {
+  font-size: 1em;
   width: 100%;
   height: 100%;
+  padding-top: 7px;
   background: transparent;
   border: none;
 }
@@ -315,7 +320,7 @@ footer {
   border: 2px solid #000000;
   border-radius: 20px;
   z-index: 550;
-  transition: .5s;
+  transition: all 0.3s ease;
 }
 
 .back-button:hover {
@@ -335,7 +340,7 @@ footer {
 }
 
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .button-nav {
